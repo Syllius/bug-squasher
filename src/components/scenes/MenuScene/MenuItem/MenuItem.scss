@@ -1,0 +1,27 @@
+@import '../../../../vars/values.scss';
+@import '../../../../vars/colors.scss';
+
+div.menu-item {
+    font-size: 32px;
+    margin: 0 0 30px 0;
+    cursor: pointer;
+    filter: opacity(50%) brightness(100%);
+    transition: filter 0.25s;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: $white;
+        text-shadow: 0px 0px 15px $white;
+    }
+
+    &:hover {
+        filter: opacity(100%) brightness(120%);
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    div.menu-item {
+        font-size: 28px;
+    }
+}

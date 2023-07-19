@@ -1,0 +1,37 @@
+@import '../../../vars/values.scss';
+@import '../../../vars/colors.scss';
+
+div.game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: url('hammer.png'), auto;
+
+    &.game-smash {
+        cursor: url('hammer_down.png'), auto;
+    }
+
+    .game-start-counter {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: $white;
+            text-shadow: 0px 0px 15px $white;
+            font-size: 213px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    div.game {
+        .game-start-counter {
+            h1 {
+                font-size: 153px;
+            }
+        }
+    }
+}
